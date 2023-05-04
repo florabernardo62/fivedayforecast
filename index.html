@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <input id="city" type="text">
+    <button id="submitBtn" onclick="display()">Submit</button>
+    <div id="current-weather">
+        <h2>Current Weather</h2>
+        <p>
+            <strong>City:</strong> <span id="city-name"></span><br>
+            <strong>Current temperature:</strong> <span id="temp"></span> &deg;C<br>
+            <strong>Weather description:</strong> <span id="description"></span><br>
+            <strong>Humidity:</strong> <span id="humidity"></span>%<br>
+            <strong>Wind speed:</strong> <span id="wind-speed"></span> km/h<br>
+            <strong>UV index:</strong> <span id="uv-index"></span>
+        </p>
+    </div>
+    <div onclick="planAhead()" id="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-cards"></div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
